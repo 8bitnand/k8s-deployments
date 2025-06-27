@@ -1,2 +1,2 @@
-docker build  -t helloworld:py3.9 -f Dockerfile .
-docker run -p 80:80 helloworld:py3.9    
+docker build  -t helloworld:latest -f Dockerfile .
+docker run -p 80:80 helloworld:latest 

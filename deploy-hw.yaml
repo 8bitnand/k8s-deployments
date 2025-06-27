@@ -19,7 +19,6 @@ spec:
         image: asia-south1-docker.pkg.dev/proud-storm-464205-p3/backend/helloworld:prod
         ports:
         - containerPort: 80
-        imagePullPolicy: Always
 
 ---
 apiVersion: v1
