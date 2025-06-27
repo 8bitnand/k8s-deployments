@@ -10,7 +10,7 @@ env:
   GKE_CLUSTER: backend-1    
   GKE_ZONE: asia-south1   # cluster zone
   IMAGE: asia-south1-docker.pkg.dev/proud-storm-464205-p3/backend/helloworld # image name
-  IMAGE_TAG: py-0.1 # image tag
+  IMAGE_TAG: prod # image tag
   GAR_ZONE: asia-south1 # artifact registry zone
   GAR_REPO: backend # artifact registry repository
   NAMESPACE: backend-prod
