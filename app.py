@@ -9,6 +9,12 @@ app = FastAPI()
 def read_root():
     return {"response": "Hello World"}
 
+
 @app.get("/random")
 def random_number():
-    return {"random_number": random.randint(0, 100)}
+    return {"random_number": random.random()}
+
+
+@app.get("/random/{number}")
+def random_number_with_range(number: int):
+    return {"random_number": random.randint(0, number)}
