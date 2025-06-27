@@ -13,6 +13,7 @@ env:
   IMAGE_TAG: py-0.1 # image tag
   GAR_ZONE: asia-south1 # artifact registry zone
   GAR_REPO: backend # artifact registry repository
+  NAMESPACE: backend-prod
 
 
 jobs:
@@ -61,4 +62,5 @@ jobs:
     - name: Deploy
       run: |-
         kubectl apply -f deploy-hw.yaml
-        kubectl get pods
+        kubectl get pods -n $NAMESPACE
+        kubectl get services -n $NAMESPACE
